@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class employee
+{
+private:
+    string name;
+    int roll;
+public:
+     string standard;
+     float salary;
+     void setdata(string name1, int id);
+     void getdata();
+};
+void employee:: setdata(string name1, int id)
+{
+    name=name1;
+    roll=id;
+}
+void employee::getdata()
+{
+    cout <<"Name of employee is:"<<name<<endl;
+    cout <<"id of employee is:"<<roll<<endl;
+}
+int main()
+{
+    employee riya;
+    riya.standard= "12th";
+    riya.salary= 500000;
+    riya.setdata("Riya",191925);
+    riya.getdata();
+    return 0;
+}
